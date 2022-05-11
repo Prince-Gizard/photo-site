@@ -9,7 +9,7 @@ const Page = () => {
     <Container>
       <Flex alignContent="center" justifyContent="center" >
         <Center  height={"80vh"}>
-          dsdasdsa  jan baptist mondino
+          jan baptist mondino
         </Center>
       </Flex>
     </Container>

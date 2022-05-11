@@ -2,18 +2,16 @@ import {
   Container,
   Flex,
   Center,
-  Image,
   Box
 } from '@chakra-ui/react'
+import Gifty from '../hook/gifty.js'
 
 const Photo =()=> {
   return (
-   <Container>
-      <Flex bg="red" alignContent="center" justifyContent="center" >
-        <Center bg="green"  h={"80vh"}   >
-          Photo
-        </Center>
-      </Flex>
+    <Container>
+      <Center bg="red" h={"80vh"}>
+       <Gifty  /> 
+      </Center>
     </Container>
   )
 }
