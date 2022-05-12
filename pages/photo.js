@@ -8,9 +8,9 @@ import Gifty from '../hook/gifty.js'
 
 const Photo =()=> {
   return (
-    <Container>
-      <Center bg="red" h={"80vh"}>
-       <Gifty  /> 
+    <Container h={"80vh"} flexDirection='column' display='flex'>
+      <Center overflowY="hidden" overflowX='scroll' >
+        <Gifty  />
       </Center>
     </Container>
   )
