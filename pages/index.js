@@ -8,8 +8,8 @@ const Page = () => {
   return (
     <Container>
       <Flex alignContent="center" justifyContent="center" >
-        <Center  height={"80vh"}>
-          jan baptist mondino
+        <Center as='samp' height={"80vh"}>
+          fashion artist project
         </Center>
       </Flex>
     </Container>

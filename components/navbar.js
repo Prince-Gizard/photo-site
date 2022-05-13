@@ -3,7 +3,6 @@ import {
   Box,
   Spacer,
   Button,
-useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
@@ -17,21 +16,21 @@ const Navbar = () => {
       <Spacer/>
         <Box p='2'>
          <NextLink href="/photo" scroll={false} passHref>
-            <Button variant='ghost'  >
+            <Button as='samp' variant='link'  >
               Photo
             </Button>
           </NextLink>
         </Box>
         <Box p='2'>
           <NextLink href="/film" scroll={false} passHref>
-            <Button variant='ghost'  >
+            <Button as='samp' variant='link'  >
               Film
             </Button>
           </NextLink>
         </Box>
         <Box p='2'>
           <NextLink href="/contact" scroll={false} passHref>
-            <Button variant='ghost'   >
+            <Button as='samp' variant='link'   >
               Contact
             </Button>
           </NextLink>

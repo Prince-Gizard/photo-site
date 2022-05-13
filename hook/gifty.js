@@ -7,10 +7,9 @@ import {
 import {useEffect, useState} from 'react';
 import axios from 'axios';
 import Loader from '../components/loader'
-//import GIF_API from '../.env' 
 
 const Gifty = () => {
-    
+
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   //fetching Gift
@@ -19,10 +18,10 @@ const Gifty = () => {
         setIsLoading(true);
         const results = await axios("https://api.giphy.com/v1/gifs/trending", {
           params: {
-            api_key:"SvtZSGg3DboeCXZ7y50Yisb11w7Dw6Og",
+            api_key:process.env.GIF_API,
             limit:"10"
           }
-        },);
+        });
 
         console.log(results);
         setData(results.data.data);

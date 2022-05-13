@@ -1,8 +1,6 @@
 import {
   Container,
-  Flex,
   Center,
-  Box
 } from '@chakra-ui/react'
 import Gifty from '../hook/gifty.js'
 
