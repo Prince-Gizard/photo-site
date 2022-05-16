@@ -2,7 +2,7 @@ import {
   Box, 
   Image, 
   Center,
-  Stack,
+  HStack,
 } from '@chakra-ui/react'
 import {useEffect, useState} from 'react';
 import axios from 'axios';
@@ -42,18 +42,18 @@ const Gifty = () => {
     return(
     data.map(el=>{
       return(
-        <Stack m={3} w={40} key={el.id}>
+        <Box key={el.id}>
            <Image alt="image" src={el.images.fixed_height.url}/>
-         </Stack>
+         </Box>
       )
     }) 
     )
   }
     
   return (
-      <Box>
+      <HStack whiteSpace="nowrap">
         {renderGifts()}
-      </Box>
+      </HStack>
   )
 }
 
